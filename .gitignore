@@ -20,8 +20,7 @@ dist/
 build/
 
 # 🔐 Firebase credentials (ignore if used locally)
-firebase.js
 
 # ☁️ Cloudinary secrets (ignore if contains sensitive info)
-cloudinary.js
+
 .vercel

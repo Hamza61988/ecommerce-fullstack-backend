@@ -227,5 +227,6 @@ app.get('/protected', authenticateToken, (req, res) => {
 
 
 
-const serverless = require('serverless-http');
-module.exports = serverless(app);
+app.listen(port, () => {
+  console.log(`Server is running on port ${port}`);
+});

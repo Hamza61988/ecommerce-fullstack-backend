@@ -1,0 +1,26 @@
+# 🔒 Environment variables (MUST be ignored)
+.env
+
+# 📦 Dependencies
+node_modules/
+
+# ⚙️ Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 📁 OS/Editor settings (optional but recommended)
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# 🔥 Build artifacts or transpiled output (if using Babel/TypeScript)
+dist/
+build/
+
+# 🔐 Firebase credentials (ignore if used locally)
+firebase.js
+
+# ☁️ Cloudinary secrets (ignore if contains sensitive info)
+cloudinary.js

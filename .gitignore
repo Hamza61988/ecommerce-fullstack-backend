@@ -24,3 +24,4 @@ firebase.js
 
 # ☁️ Cloudinary secrets (ignore if contains sensitive info)
 cloudinary.js
+.vercel

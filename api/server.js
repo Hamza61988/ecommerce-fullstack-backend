@@ -8,7 +8,7 @@ const multer = require('multer');
 const jwt = require('jsonwebtoken')
 const { v4: uuidv4 } = require('uuid');
 const { addDoc, collection, getDocs, doc, deleteDoc, getDoc, query, where } = require('firebase/firestore');
-const { db } = require('./firebase');
+const { db } = require('../firebase');
 const cloudinary = require('cloudinary').v2;
 
 const app = express();
@@ -227,6 +227,5 @@ app.get('/protected', authenticateToken, (req, res) => {
 
 
 
-app.listen(port, () => {
-  console.log(`Server is running at http://localhost:${port}`);
-});
+const serverless = require('serverless-http');
+module.exports = serverless(app);
